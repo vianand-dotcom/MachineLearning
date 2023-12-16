@@ -7,32 +7,26 @@ To get started with the project, follow these steps:
 
 Clone the Repository:
 
-bash
 Copy code
 git clone https://github.com/vianand-dotcom/MachineLearning.git
 Navigate to the Project Directory:
 
-bash
 Copy code
 cd MachineLearning
 Create a Virtual Environment (Optional but Recommended):
 
-bash
 Copy code
 python -m venv venv
 Activate the Virtual Environment:
 
 On Windows:
-bash
 Copy code
 .\venv\Scripts\activate
 On Unix or MacOS:
-bash
 Copy code
 source venv/bin/activate
 Install Dependencies:
 
-bash
 Copy code
 pip install -r requirements.txt
 Contributing
@@ -43,12 +37,10 @@ Fork the Repository:
 Click the "Fork" button at the top-right corner of this repository.
 Clone Your Fork:
 
-bash
 Copy code
 git clone https://github.com/vianand-dotcom/MachineLearning.git
 Create a New Branch:
 
-bash
 Copy code
 git checkout -b feature-or-fix-branch
 Make Changes:
@@ -56,12 +48,10 @@ Make Changes:
 Implement new features, fix bugs, or make improvements.
 Commit Changes:
 
-bash
 Copy code
 git commit -m "Your descriptive commit message"
 Push Changes to Your Fork:
 
-bash
 Copy code
 git push origin feature-or-fix-branch
 Create a Pull Request:
