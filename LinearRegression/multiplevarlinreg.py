@@ -37,6 +37,8 @@ def multiple_var_computegrad(x, y, w, b):
         dj_db = dj_db+err
     dj_dw = dj_dw / m
     dj_db = dj_db / m
+    print(f"value of dj_dw = {dj_dw}")
+    print(f"value of dj_db={dj_db}")
     return dj_db, dj_dw
 
 
@@ -64,8 +66,9 @@ def multiple_var_gradient_descent(X, y, w_in, b_in, cost_function, gradient_func
     w = copy.deepcopy(w_in)
     b = b_in
     for i in range(num_iters):
+        # dj_dw returned is an array of same size as no of feature in training examples
         dj_db, dj_dw = gradient_function(X, y, w, b)
-        w = w - alpha * dj_dw
+        w = w - alpha * dj_dw  # here dj_dw is an array
         b = b - alpha * dj_db
         if i < 100000:
             J_history.append(cost_function(X, y, w, b))
